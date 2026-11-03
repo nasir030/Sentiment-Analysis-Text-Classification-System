@@ -1,0 +1,109 @@
+{
+  "dataset": "stanfordnlp/imdb (labeled train split)",
+  "label_names": {
+    "0": "Negative",
+    "1": "Positive"
+  },
+  "neutral_supported": false,
+  "sample_size": 10000,
+  "train_size": 8000,
+  "test_size": 2000,
+  "random_state": 42,
+  "selected_model": "Logistic Regression",
+  "model_comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.884,
+      "precision": 0.8673664122137404,
+      "recall": 0.907185628742515,
+      "f1": 0.8868292682926829,
+      "confusion_matrix": [
+        [
+          859,
+          139
+        ],
+        [
+          93,
+          909
+        ]
+      ],
+      "classification_report": {
+        "Negative": {
+          "precision": 0.9023109243697479,
+          "recall": 0.8607214428857716,
+          "f1-score": 0.8810256410256411,
+          "support": 998.0
+        },
+        "Positive": {
+          "precision": 0.8673664122137404,
+          "recall": 0.907185628742515,
+          "f1-score": 0.8868292682926829,
+          "support": 1002.0
+        },
+        "accuracy": 0.884,
+        "macro avg": {
+          "precision": 0.8848386682917442,
+          "recall": 0.8839535358141433,
+          "f1-score": 0.883927454659162,
+          "support": 2000.0
+        },
+        "weighted avg": {
+          "precision": 0.8848037237795882,
+          "recall": 0.884,
+          "f1-score": 0.883933258286429,
+          "support": 2000.0
+        }
+      }
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.8815,
+      "precision": 0.8963730569948186,
+      "recall": 0.8632734530938124,
+      "f1": 0.8795119471276055,
+      "confusion_matrix": [
+        [
+          898,
+          100
+        ],
+        [
+          137,
+          865
+        ]
+      ],
+      "classification_report": {
+        "Negative": {
+          "precision": 0.8676328502415459,
+          "recall": 0.8997995991983968,
+          "f1-score": 0.8834235120511559,
+          "support": 998.0
+        },
+        "Positive": {
+          "precision": 0.8963730569948186,
+          "recall": 0.8632734530938124,
+          "f1-score": 0.8795119471276055,
+          "support": 1002.0
+        },
+        "accuracy": 0.8815,
+        "macro avg": {
+          "precision": 0.8820029536181823,
+          "recall": 0.8815365261461046,
+          "f1-score": 0.8814677295893807,
+          "support": 2000.0
+        },
+        "weighted avg": {
+          "precision": 0.8820316938249355,
+          "recall": 0.8815,
+          "f1-score": 0.8814638180244572,
+          "support": 2000.0
+        }
+      }
+    }
+  },
+  "data_quality": {
+    "source_rows": 25000,
+    "missing_reviews": 0,
+    "missing_labels": 0,
+    "duplicate_reviews": 99,
+    "rows_after_cleaning": 24901
+  },
+  "feature_count": 100000
+}
